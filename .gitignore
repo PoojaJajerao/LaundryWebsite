@@ -1,0 +1,14 @@
+.DS_Store
+*.pyc
+tests/artifacts
+tests/load_test_stats*
+/venv/
+coverage.xml
+pytest-report.xml
+/local_debug/*
+get-pip.py
+.idea/*
+*/.coverage
+*/.scannerwork/*
+*/.pytest_cache/*
+.env

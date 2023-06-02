@@ -1,0 +1,21 @@
+openapi: "3.0.0"
+
+info:
+  version: 1.0.0
+  title: campus-laundry
+  description: campus-laundry description
+
+
+servers:
+  - url: /campus-laundry
+
+
+paths:
+   /health:
+      get:
+        summary: Health Check of the services
+        operationId: api.health.get
+        responses:
+          200:
+            description: Status message from server describing current health
+

@@ -1,0 +1,13 @@
+uwsgi
+Flask
+connexion[swagger-ui]
+Flask-Injector
+pycryptodome
+mysql
+pyodbc==4.0.26
+ConfigParser
+xmltodict
+python-dateutil
+defusedxml
+mysql-connector-python
+python-dotenv
