@@ -1,3 +1,5 @@
+.idea/
+../.idea/
 .DS_Store
 *.pyc
 tests/artifacts
@@ -7,8 +9,8 @@ coverage.xml
 pytest-report.xml
 /local_debug/*
 get-pip.py
-.idea/*
+../.idea/vcs.xml
 */.coverage
 */.scannerwork/*
 */.pytest_cache/*
-.env
+Python/.env

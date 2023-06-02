@@ -1,8 +1,7 @@
-import logging
 import mysql.connector
 import uuid
-from common.constants import log_err_message
-from common.configparser_lib import ConfigReader
+from Python.common.constants import log_err_message
+from Python.common.configparser_lib import ConfigReader
 from datetime import datetime
 from dotenv import dotenv_values
 

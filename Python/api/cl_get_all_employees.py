@@ -1,5 +1,5 @@
-from common.constants import RESULTS, MESSAGE, ERROR_CODE
-from common.mysql import MySQL
+from Python.common.constants import RESULTS, MESSAGE, ERROR_CODE
+from Python.common.mysql import MySQL
 
 
 def get():
