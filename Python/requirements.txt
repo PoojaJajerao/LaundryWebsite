@@ -1,10 +1,8 @@
-uwsgi
-Flask
+Flask==2.2.3
 connexion[swagger-ui]
 Flask-Injector
 pycryptodome
-mysql
-pyodbc==4.0.26
+pyodbc
 ConfigParser
 xmltodict
 python-dateutil
