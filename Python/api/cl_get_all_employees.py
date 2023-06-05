@@ -1,5 +1,5 @@
-from Python.common.constants import RESULTS, MESSAGE, ERROR_CODE
-from Python.common.mysql import MySQL
+from common.constants import RESULTS, MESSAGE, ERROR_CODE
+from common.mssql import MSSQL
 
 
 def get():
@@ -8,10 +8,8 @@ def get():
 
 
 class CLGetAllEmployeesData:
-    def __init__(self):
-        pass
-
-    def execute_call(self):
+    @staticmethod
+    def execute_call():
         """
           executes the function call
 
@@ -20,11 +18,11 @@ class CLGetAllEmployeesData:
         return_val = dict()
         cnx = None
         try:
+            conn = MSSQL.connect()
 
-            conn = MySQL.connect()
-            query = "SELECT firstname, lastname FROM employees"
+            query = "SELECT first_name, last_name FROM employees"
 
-            rows = MySQL.execute_query_with_params(conn, query)
+            rows = MSSQL.execute_query_with_columns(conn, query)
 
             if len(rows) > 0:
                 return_val[RESULTS] = rows
